@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hướng dẫn sử dụng"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <!-- LinearLayout chứa 2 hình ảnh và nhãn -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Admin Image + Label -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="16dp">
+            <ImageView
+                android:id="@+id/adminImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/admin_icon"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/adminLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADMIN"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- User Image + Label -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/userImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/user_icon"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/userLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USER"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

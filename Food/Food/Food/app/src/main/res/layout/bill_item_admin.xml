@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Hiển thị thông tin hóa đơn -->
+        <TextView
+            android:id="@+id/billTextViewadm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mặt hàng hiển thị ở đây!"
+            android:textSize="16sp" />
+
+        <!-- Trạng thái đơn hàng -->
+        <TextView
+            android:id="@+id/statusTextViewadm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đang chờ xác nhận"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <!-- Layout ngang chứa hai nút -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <!-- Nút Xác nhận -->
+            <Button
+                android:id="@+id/confirmButtonadm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xác nhận"
+                android:backgroundTint="@android:color/holo_green_light" />
+
+            <!-- Nút Xóa -->
+            <Button
+                android:id="@+id/deleteButtonadm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xóa"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
